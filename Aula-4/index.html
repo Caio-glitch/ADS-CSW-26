@@ -1,173 +1,101 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Times do Brasil</title>
-    <style>
-        .brasil{
-            transform: translateY(100px);
-            margin-left: 100px;
-        }
-        .lucro{
-            transform: translateY(-250px);
-            margin-left: 450px;
-        }
-        .analise{
-            transform: translateY(-250px);
-            margin-left: 400px;
-            width: 500px;
-        }
-    </style>
-  </head>
-  <body>
-    <table border="2" class="brasil">
-      <thead>
-        <tr>
-          <th colspan="2"><strong>Brasil</strong></th>
-        </tr>
-        <tr>
-          <th><strong>Estado</strong></th>
-          <th><strong>Time</strong></th>
-        </tr>
-      </thead>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aula04</title>
+</head>
+<body>
+<h1>Principais formatações</h1>
+<h2>Negrito / Destaque</h2>
+<p>Na frase temos uma <b>parte do texto em negrito</b> usando a tag B (não semântica)</p>
+<p>Na frase temos uma <strong> parte do texto em negrito</strong> usando a tag strong (com semântica)</p>
 
-      <tbody>
-        <tr>
-          <td rowspan="4">São Paulo</td>
-          <td>Corinthians</td>
-        </tr>
-        <tr>
-          <td>Palmeiras</td>
-        </tr>
-        <tr>
-          <td>São Paulo FC</td>
-        </tr>
-        <tr>
-          <td>Santos</td>
-        </tr>
-        <tr>
-          <td rowspan="4">Rio de Janeiro</td>
-          <td>Flamengo</td>
-        </tr>
-        <tr>
-          <td>Fluminense</td>
-        </tr>
-        <tr>
-          <td>Vasco</td>
-        </tr>
-        <tr>
-          <td>Botafogo</td>
-        </tr>
-      </tbody>
-    </table>
-    <br />
+<h2>Itálico / Ênfase</h2>
+<p>Nesta frase vamos entrar com uma palavra em <i>itálico</i> usando a tag i (não semântica)</p>
+<p>Nesta frase vamos entrar com uma palavra em <em>itálico</em> usando a tag EM (com semântica)</p>
 
-    <table border="2" class="lucro">
-      <thead>
-        <tr>
-          <th rowspan="2"><strong>Funcionário</strong></th>
-          <th rowspan="2"><strong>Semestre</strong></th>
-          <th colspan="2"><strong>Gastos</strong></th>
-          <th colspan="2"><strong>Lucros</strong></th>
-        </tr>
-        <tr>
-          <th><strong>Líquido</strong></th>
-          <th><strong>Bruto</strong></th>
-          <th><strong>Líquido</strong></th>
-          <th><strong>Bruto</strong></th>
-        </tr>
-      </thead>
+<h2>Texto Marcador</h2>
+<p>Aqui vamos usar um texto com destaque <mark class="verde">de marcador de texto</mark> usando mark</p>
+<p>Aqui vamos usar um texto com destaque <mark class="amarelo">de marcador de texto</mark> usando mark</p>
 
-      <tbody>
-        <tr>
-          <td rowspan="2">João</td>
-          <td>1º</td>
-          <td>1000</td>
-          <td>1200</td>
-          <td>200</td>
-          <td>300</td>
-        </tr>
-        <tr>
-          <td>2º</td>
-          <td>1000</td>
-          <td>1200</td>
-          <td>200</td>
-          <td>300</td>
-        </tr>
+<h2>Texto grande e pequeno</h2>
+<p>Estamos trabalhando aqui com um <big>texto grande</big> e um <small>texto pequeno</small> nesta</p> 
 
-        <tr>
-          <td rowspan="2">Maria</td>
-          <td>1º</td>
-          <td>1000</td>
-          <td>1200</td>
-          <td>200</td>
-          <td>300</td>
-        </tr>
-        <tr>
-          <td>2º</td>
-          <td>1000</td>
-          <td>1200</td>
-          <td>200</td>
-          <td>300</td>
-        </tr>
-      </tbody>
-    </table>
+<h2>Texto Deletado</h2>
+<p>Neste parágrafo vamos trabalhar com um texto <del>que foi excluído</del> da frase (forma semântica)</p>
 
-    <br />
-    <table border="2" class="analise">
-      <thead>
-        <tr>
-          <th><strong>Produto</strong></th>
-          <th colspan="4"><strong>Análise de Produto</strong></th>
-        </tr>
-      </thead>
+<h2>Texto inserido</h2>
+<p>Nesta frase vamos demonstrar como destacar um texto <ins>que foi inserido</ins> na frase de forma semântica</p>
+<p>Nesta frase vamos demonstrar como destacar um texto <u>que foi inserido</u> na frase de forma não semântica</p>
 
-      <tbody>
-        <tr>
-          <td rowspan="4"><strong>Caixa JBL Bump!</strong></td>
-          <td rowspan="2"><strong>Submarino</strong></td>
-          <td><strong>Boleto</strong></td>
-          <td>R$ 300,00</td>
-        </tr>
+<h2>Texto sobrescrito</h2>   
+<p>vamos demonstrar uma formula da equação do segundo grau: ax<sup>2</sup> + bx + c = 0 usando tag sup</p>
 
-        <tr>
-          <td><strong>Cartão</strong></td>
-          <td>R$350,00</td>
-        </tr>
-        <td rowspan="2"><strong>Amazo</strong>n</td>
-          <td><strong>Boleto</strong></td>
-          <td>R$ 310,00</td>
-        </tr>
+<h2>Texto subescrito</h2>
+<p>vamos demonstrar o texto subescrito com a formula da agua H<sub>2</sub>O</p>
 
-        <tr>
-          <td><strong>Cartão</strong></td>
-          <td>R$340,00</td>
-        </tr>
+<h2>Trecho de código fonte</h2>
+    <pre>
+        <code>
+            import math
 
-        <tr>
-            <td rowspan="4"><strong>Apple Wacth SE</strong></td>
-            <td rowspan="2"><strong>Submarino</strong></td>
-            <td><strong>Boleto</strong></td>
-            <td>R$ 2300,00</td>
-          </tr>
-  
-          <tr>
-            <td><strong>Cartão</strong></td>
-            <td>R$2500,00</td>
-          </tr>
-          <td rowspan="2"><strong>Amazon</strong></td>
-          <td><strong>Boleto</strong></td>
-          <td>R$ 2350,00</td>
-        </tr>
+# Entrada dos valores
+a = float(input("Digite o valor de a: "))
+b = float(input("Digite o valor de b: "))
+c = float(input("Digite o valor de c: "))
 
-        <tr>
-          <td><strong>Cartão</strong></td>
-          <td>R$2350,00</td>
-        </tr>
+# Cálculo do delta
+delta = b**2 - 4*a*c
 
+# Verificação das raízes
+if delta > 0:
+    x1 = (-b + math.sqrt(delta)) / (2*a)
+    x2 = (-b - math.sqrt(delta)) / (2*a)
+    print("Duas raízes reais:")
+    print("x1 =", x1)
+    print("x2 =", x2)
 
-      </tbody>
-    </table>
+elif delta == 0:
+    x = -b / (2*a)
+    print("Uma raiz real:")
+    print("x =", x)
+
+else:
+    print("Não existem raízes reais.")
+        </code>
+    </pre>
+  </body>
+</html>
+    <pre>
+        <code>
+            import math
+
+# Entrada dos valores
+a = float(input("Digite o valor de a: "))
+b = float(input("Digite o valor de b: "))
+c = float(input("Digite o valor de c: "))
+
+# Cálculo do delta
+delta = b**2 - 4*a*c
+
+# Verificação das raízes
+if delta > 0:
+    x1 = (-b + math.sqrt(delta)) / (2*a)
+    x2 = (-b - math.sqrt(delta)) / (2*a)
+    print("Duas raízes reais:")
+    print("x1 =", x1)
+    print("x2 =", x2)
+
+elif delta == 0:
+    x = -b / (2*a)
+    print("Uma raiz real:")
+    print("x =", x)
+
+else:
+    print("Não existem raízes reais.")
+        </code>
+    </pre>
   </body>
 </html>
