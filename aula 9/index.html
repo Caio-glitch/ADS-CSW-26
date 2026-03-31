@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tab{
+            width: 500px;
+            margin: 0 auto;
+            transform: translateY(50%);
+        }
+    </style>
+</head>
+<body>
+    <table  class="tab" border="1">
+        <form action="2">
+            <tr>
+                <td>Nome:</td>
+                <td><input type="text" name="nome" placeholder="Digite seu nome"></td>
+            </tr>
+            <tr>
+                <td>E-mail:</td>
+                <td><input type="email" name="email" placeholder="Digite seu email com @"></td>
+            </tr>
+            <tr>
+                <td>E-mail (patter):</td>
+                <td><input type="email" name="email_pessoal" placeholder="Digite seu email com @"></td>
+            </tr>
+            <tr>
+                <td>Senha:</td>
+                <td><input type="password" name="senha" placeholder="Digite sua senha"></td>
+            </tr>
+            <tr>
+                <td>Idade:</td>
+                <td><input type="number" name="idade" placeholder="Digite sua idade"></td>
+            </tr>
+            <tr>
+                <td>Deixe um comentário:</td>
+                <tr>
+                     <td><input type="text" name="comentario" placeholder="Digite seu comentário"></td>
+                </tr>
+               
+            </tr>
+            <tr>
+                <td>
+                    <label for="materia">Materia de interesse</label>
+                    <br>
+                    <input type="checkbox" name="materia" value="backend"> BackEnd
+                    <br>
+                    <input type="checkbox" name="materia" value="frontend"> FrontEnd
+                    <br>
+                    <input type="checkbox" name="materia" value="fullstack"> FullStack
+                </td>
+
+                <td><label for="materia">Tipo de Vantagens</label>
+                    <br>
+                    <input type="radio" name="materia" value="backend"> Negócios
+                    <br>
+                    <input type="radio" name="materia" value="frontend"> Lazer
+                    <br>
+                    <input type="radio" name="materia" value="Turismo"> Turismo
+                    <br>
+                    <input type="radio" name="materia" value="academico"> Acadêmico
+                </td>
+            </tr>
+                
+            </tr>
+            <tr>
+                <td>
+                    <label for="esporte">Esporte Favorito</label>
+                    <select name="esporte" size="1">
+                    <option value="">Selecione</option>
+                    <option value="Futebol">Futebol</option>
+                    <option value="Basquete">Basquete</option>
+                    <option value="Volei">Volei</option>
+                    <option value="Tenis">Tênis</option>
+                </select>
+                </td>
+                
+                  <td>
+                    <label for="esporte">Esporte Favorito</label>
+                    <select name="esporte" size="5" multiple>
+                    <option value="">Selecione</option>
+                    <option value="Futebol">Futebol</option>
+                    <option value="Basquete">Basquete</option>
+                    <option value="Volei">Volei</option>
+                    <option value="Tenis">Tênis</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="cor">Escolha de cor</label>
+                    <input type="color" name="cor">
+                </td>
+                <td>
+                    <label for="arquivo">Selecione um arquivo</label>
+                    <input type="file" name="arquivo">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="">Data e Hora envio: </label>
+                    <input type="datetime-local" name="data_hora">
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>
